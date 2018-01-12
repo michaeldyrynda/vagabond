@@ -22,13 +22,9 @@ Once installed, you will have access to the `nomad` application, a default confi
 
 ## Usage
 
-Before you can begin to use Nomad, you must first install it.
+Out of the box, Vagabond is configured to use a local SQLite database in `config/database.php`.
 
-```
-php nomad migrate:install
-```
-
-This will setup the migration database table, which is used to track which migrations have been run and which ones are pending.
+You may change this file as required for your database environment, and will support any of the database drivers and configuration options that are [supported by Laravel](https://laravel.com/docs/5.5/database#configuration).
 
 To create a migration, use the `make:migration` Nomad command.
 
@@ -36,7 +32,7 @@ To create a migration, use the `make:migration` Nomad command.
 php nomad make:migration create_travellers_table
 ```
 
-You can check the status of your ran and pending migrations using the `status` command.
+You can check the status of your run and pending migrations using the `status` command.
 
 ```
 php nomad migrate:status
