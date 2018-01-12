@@ -3,6 +3,7 @@
     "description": "Eloquent without a home",
     "type": "project",
     "homepage": "https://github.com/michaeldyrynda/vagabond",
+    "license": "MIT",
     "authors": [
         {
             "name": "Michael Dyrynda",
