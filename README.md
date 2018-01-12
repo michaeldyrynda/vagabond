@@ -22,7 +22,7 @@ Once installed, you will have access to the `nomad` application, a default confi
 
 ## Usage
 
-Out of the box, Vagabond is configured to use a local SQLite database in `config/database.php`. As with Laravel, you can [configure your connections](https://laravel.com/docs/5.5/database#configuration) and database drivers of choice, as well as keeping credentials safe in your `.env` file.
+Out of the box, Vagabond is configured to use a MySQL database in `config/database.php`. As with Laravel, you can [configure your connections](https://laravel.com/docs/5.5/database#configuration) and database drivers of choice, as well as keeping credentials safe in your `.env` file.
 
 To create a migration, use the `make:migration` Nomad command.
 
