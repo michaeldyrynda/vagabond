@@ -15,7 +15,7 @@ In addition, you also have the ability to use those centralised migrations withi
 In order to create a new Vagabond project, you can use [Composer](https://getcomposer.org).
 
 ```
-composer create-project dyrynda/vagabond wanderer
+composer create-project --prefer-dist dyrynda/vagabond wanderer
 ```
 
 Once installed, you will have access to the `nomad` application, a default configuration to work with an sqlite database, and a `MigrationServiceProvider` that will be automatically loaded, should you choose to use your Vagabond project to share your migrations with other Laravel applications.
