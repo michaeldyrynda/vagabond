@@ -75,16 +75,16 @@
         },
         {
             "name": "dyrynda/nomad",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/michaeldyrynda/nomad.git",
-                "reference": "7e14c9536a7aead19ab8f1ef71efbfed357567a7"
+                "reference": "14003e0ba3d5e75a7a875e91132196536624c0f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/michaeldyrynda/nomad/zipball/7e14c9536a7aead19ab8f1ef71efbfed357567a7",
-                "reference": "7e14c9536a7aead19ab8f1ef71efbfed357567a7",
+                "url": "https://api.github.com/repos/michaeldyrynda/nomad/zipball/14003e0ba3d5e75a7a875e91132196536624c0f1",
+                "reference": "14003e0ba3d5e75a7a875e91132196536624c0f1",
                 "shasum": ""
             },
             "require": {
@@ -113,6 +113,9 @@
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Michael Dyrynda",
@@ -120,8 +123,8 @@
                 }
             ],
             "description": "Laravel-style database migrations wherever they may roam",
-            "homepage": "https://michaeldyrynda.github.io/nomad",
-            "time": "2018-01-12T06:12:54+00:00"
+            "homepage": "https://github.com/michaeldyrynda/nomad",
+            "time": "2018-01-12T13:19:40+00:00"
         },
         {
             "name": "illuminate/cache",
