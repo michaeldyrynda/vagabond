@@ -2,17 +2,28 @@
 
 return [
 
+    'default' => env('DB_CONNECTION', 'sqlite'),
+
     'connections' => [
 
-        /**
-         * Unlike a standard Laravel application, Nomad only requires a single
-         * database connection, which it uses to manage your app migrations. 
-         * Nomad uses the same database configuration as any Laravel app.
-         */
-        'default' => [
+        'sqlite' => [
             'driver' => 'sqlite',
             'database' => env('DB_DATABASE', database_path('database.sqlite')),
             'prefix' => '',
+        ],
+
+        'mysql' => [
+            'driver' => 'mysql',
+            'host' => env('DB_HOST', '127.0.0.1'),
+            'port' => env('DB_PORT', '3306'),
+            'database' => env('DB_DATABASE', 'forge'),
+            'username' => env('DB_USERNAME', 'forge'),
+            'password' => env('DB_PASSWORD', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'strict' => true,
+            'engine' => null,
         ],
 
     ],
