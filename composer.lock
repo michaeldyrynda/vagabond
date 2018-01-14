@@ -75,16 +75,16 @@
         },
         {
             "name": "dyrynda/nomad",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/michaeldyrynda/nomad.git",
-                "reference": "ec429cd82b8fe7c6a3ede5c001c8820b3173b331"
+                "reference": "144e6f7e1b212e98e2d998ef722034f534a0e2f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/michaeldyrynda/nomad/zipball/ec429cd82b8fe7c6a3ede5c001c8820b3173b331",
-                "reference": "ec429cd82b8fe7c6a3ede5c001c8820b3173b331",
+                "url": "https://api.github.com/repos/michaeldyrynda/nomad/zipball/144e6f7e1b212e98e2d998ef722034f534a0e2f6",
+                "reference": "144e6f7e1b212e98e2d998ef722034f534a0e2f6",
                 "shasum": ""
             },
             "require": {
@@ -124,7 +124,7 @@
             ],
             "description": "Laravel-style database migrations wherever they may roam",
             "homepage": "https://github.com/michaeldyrynda/nomad",
-            "time": "2018-01-12T13:19:40+00:00"
+            "time": "2018-01-14T12:32:39+00:00"
         },
         {
             "name": "illuminate/cache",
