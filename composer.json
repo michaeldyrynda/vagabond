@@ -22,7 +22,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "App\\MigrationServiceProvider"
+                "App\\VagabondServiceProvider"
             ]
         }
     },
