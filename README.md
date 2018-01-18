@@ -50,6 +50,8 @@ As Vagabond makes use of Laravel's package auto-discovery, you can easily includ
 
 In doing so, your Laravel application will be able to access the migrations, making it very simple to use them in your test environment, whilst still managing your production database in a standalone fashion. This also means that your database could be separately versioned and even managed by database administrators independently of your development process.
 
+**Note:** Be sure not to call the `nomad` console application within your Laravel app as it will not run correctly. When ready, you can use the usual Artisan migrate tools.
+
 You'll first want to update your `composer.json` file to reflect a package name relevant to your project by updating the `name` property.
 
 If you're not using [Packagist](https://packagist.org) to share your migrations, you may need to configure a path or vcs repository as well. You can learn more about this in the Composer [repositories documentation](https://getcomposer.org/doc/05-repositories.md#hosting-your-own).
