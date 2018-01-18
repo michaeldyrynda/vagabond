@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Support\ServiceProvider;
 
-class MigrationServiceProvider extends ServiceProvider
+class VagabondServiceProvider extends ServiceProvider
 {
     public function boot()
     {
