@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "854dfd7b20652eae24d4e89b9ea8a868",
+    "content-hash": "b079d0bc7e230366dbe0f2c4d5aa8136",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -75,16 +75,16 @@
         },
         {
             "name": "dyrynda/nomad",
-            "version": "1.0.2",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/michaeldyrynda/nomad.git",
-                "reference": "144e6f7e1b212e98e2d998ef722034f534a0e2f6"
+                "reference": "601d95863e8b21b69858e102ee44cb2eac3de0c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/michaeldyrynda/nomad/zipball/144e6f7e1b212e98e2d998ef722034f534a0e2f6",
-                "reference": "144e6f7e1b212e98e2d998ef722034f534a0e2f6",
+                "url": "https://api.github.com/repos/michaeldyrynda/nomad/zipball/601d95863e8b21b69858e102ee44cb2eac3de0c9",
+                "reference": "601d95863e8b21b69858e102ee44cb2eac3de0c9",
                 "shasum": ""
             },
             "require": {
@@ -97,7 +97,7 @@
                 "illuminate/filesystem": "5.5.*",
                 "laravel-zero/foundation": "5.5.*",
                 "php": ">=7.0.0",
-                "symfony/process": "^4.0",
+                "symfony/process": "~3.3",
                 "vlucas/phpdotenv": "^2.4"
             },
             "bin": [
@@ -124,7 +124,7 @@
             ],
             "description": "Laravel-style database migrations wherever they may roam",
             "homepage": "https://github.com/michaeldyrynda/nomad",
-            "time": "2018-01-14T12:32:39+00:00"
+            "time": "2018-01-18T04:18:17+00:00"
         },
         {
             "name": "illuminate/cache",
@@ -570,16 +570,16 @@
         },
         {
             "name": "laravel-zero/foundation",
-            "version": "v5.5.28",
+            "version": "v5.5.29",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel-zero/foundation.git",
-                "reference": "aed9fd3d3090299f28c63e54b172d477fbb76e37"
+                "reference": "a8796846156a5ae42abf0a773a72a0000ebcb985"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel-zero/foundation/zipball/aed9fd3d3090299f28c63e54b172d477fbb76e37",
-                "reference": "aed9fd3d3090299f28c63e54b172d477fbb76e37",
+                "url": "https://api.github.com/repos/laravel-zero/foundation/zipball/a8796846156a5ae42abf0a773a72a0000ebcb985",
+                "reference": "a8796846156a5ae42abf0a773a72a0000ebcb985",
                 "shasum": ""
             },
             "require": {
@@ -600,7 +600,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2018-01-09T19:20:28+00:00"
+            "time": "2018-01-15T19:37:52+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -1034,25 +1034,25 @@
         },
         {
             "name": "symfony/process",
-            "version": "v4.0.3",
+            "version": "v3.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "2145b3e8137e463b1051b79440a59b38220944f0"
+                "reference": "ff69f110c6b33fd33cd2089ba97d6112f44ef0ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/2145b3e8137e463b1051b79440a59b38220944f0",
-                "reference": "2145b3e8137e463b1051b79440a59b38220944f0",
+                "url": "https://api.github.com/repos/symfony/process/zipball/ff69f110c6b33fd33cd2089ba97d6112f44ef0ba",
+                "reference": "ff69f110c6b33fd33cd2089ba97d6112f44ef0ba",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3"
+                "php": "^5.5.9|>=7.0.8"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.0-dev"
+                    "dev-master": "3.4-dev"
                 }
             },
             "autoload": {
@@ -1079,7 +1079,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2018-01-03T07:38:00+00:00"
+            "time": "2018-01-03T07:37:34+00:00"
         },
         {
             "name": "symfony/translation",
