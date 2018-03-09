@@ -56,18 +56,6 @@ You'll first want to update your `composer.json` file to reflect a package name 
 
 If you're not using [Packagist](https://packagist.org) to share your migrations, you may need to configure a path or vcs repository as well. You can learn more about this in the Composer [repositories documentation](https://getcomposer.org/doc/05-repositories.md#hosting-your-own).
 
-As Laravel does not package its `Foundation` components, Vagabond uses a fork from [`laravel-zero`](https://github.com/laravel-zero/foundation). In order to use Vagabond within your Laravel application, you'll need to add a Composer `pre-autoload-dump` script, which will help you avoid conflicts with your application's `Foundation` components, and those pulled in by [Nomad](https://github.com/michaeldyrynda/nomad).
-
-```json
-{
-    "scripts": {
-        "pre-autoload-dump": [
-            "Dyrynda\\Nomad\\ComposerScripts::preAutoloadDump"
-        ]
-    }
-}
-```
-
 ## Credits
 
 Special thanks to [Nuno Maduro](https://twitter.com/enunomaduro) for the work he has done with [Laravel Zero](http://laravel-zero.com), which helped pave the way for me to finally bring this project to life.
