@@ -11,7 +11,9 @@
         }
     ],
     "require": {
-        "php": ">=7.0.0",
+        "php": ">=7.0.0"
+    },
+    "require-dev": {
         "dyrynda/nomad": "^1.0"
     },
     "autoload": {
