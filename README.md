@@ -18,11 +18,11 @@ In order to create a new Vagabond project, you can use [Composer](https://getcom
 composer create-project --prefer-dist dyrynda/vagabond wanderer
 ```
 
-Once installed, you will have access to the `nomad` application, a default configuration to work with an sqlite database, and a `MigrationServiceProvider` that will be automatically loaded, should you choose to use your Vagabond project to share your migrations with other Laravel applications.
+Once installed, you will have access to the `nomad` application, a default configuration to work with an sqlite database, and a `VagabondServiceProvider`. You can extend from this service provider to handle automatically loading configuration for each of your connections. All you need to do is define a protected property - `$connectionName` - on the child provider, that corresponds to the connection you are configuring.
 
 ## Usage
 
-Out of the box, Vagabond is configured to use a MySQL database in `config/database.php`. As with Laravel, you can [configure your connections](https://laravel.com/docs/5.5/database#configuration) and database drivers of choice, as well as keeping credentials safe in your `.env` file.
+Out of the box, Vagabond is configured to use a MySQL database in `config/database.php`. As with Laravel, you can [configure your connections](https://laravel.com/docs/5.6/database#configuration) and database drivers of choice, as well as keeping credentials safe in your `.env` file.
 
 To create a migration, use the `make:migration` Nomad command.
 
@@ -46,9 +46,9 @@ For further information on the available commands and their functions, be sure t
 
 ## Using Vagabond in Laravel applications
 
-As Vagabond makes use of Laravel's package auto-discovery, you can easily include it in any application that access the database which it manages, by requiring the repository as a package.
+You can use Vagabond in your Laravel applications by defining and including service providers centrally in one repository, and include them in any applications that need them.
 
-In doing so, your Laravel application will be able to access the migrations, making it very simple to use them in your test environment, whilst still managing your production database in a standalone fashion. This also means that your database could be separately versioned and even managed by database administrators independently of your development process.
+In doing so, your Laravel application will be able to access the migrations and database configuration, making it very simple to use them in your test environment, whilst still managing your production database in a standalone fashion. This also means that your database could be separately versioned and even managed by database administrators independently of your development process.
 
 **Note:** Be sure not to call the `nomad` console application within your Laravel app as it will not run correctly. When ready, you can use the usual Artisan migrate tools.
 
@@ -61,6 +61,8 @@ If you're not using [Packagist](https://packagist.org) to share your migrations,
 Special thanks to [Nuno Maduro](https://twitter.com/enunomaduro) for the work he has done with [Laravel Zero](http://laravel-zero.com), which helped pave the way for me to finally bring this project to life.
 
 ## Support
+
+You can learn more about this project and how it is used [here](https://dyrynda.com.au/blog/sharing-databases-between-laravel-applications).
 
 If you are having general issues with this package, feel free to contact me on [Twitter](https://twitter.com/michaeldyrynda).
 
