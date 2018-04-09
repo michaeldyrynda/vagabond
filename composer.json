@@ -21,13 +21,6 @@
             "App\\": "app/"
         }
     },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "App\\VagabondServiceProvider"
-            ]
-        }
-    },
     "config": {
         "preferred-install": "dist",
         "sort-packages": true,
